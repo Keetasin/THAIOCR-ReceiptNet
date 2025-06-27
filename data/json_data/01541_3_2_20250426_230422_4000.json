@@ -1,0 +1,34 @@
+{
+    "store": "CP ALL, 7-Eleven Booth มอ. (01541)",
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "T",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "คัฟเค้กสอดไส้รสช็อก |",
+            "price": 12.0
+        },
+        {
+            "quantity": 1,
+            "name": "สปอนเซอร์ ไอโซโท |",
+            "price": 15.0
+        }
+    ],
+    "total": 27.0,
+    "payment": {
+        "method": "ทรูวอลเล็ท 7 App",
+        "amount": 27.0
+    },
+    "tid": "2025042600000003490939080",
+    "receipt_number": "0000230422P3",
+    "receipt_code": "7843963",
+    "date": "26/04/68",
+    "time": "18:09",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 6,
+        "used": 0,
+        "balance": 7798
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "store": "CP ALL, 7-Eleven Booth มอ. (01541)",
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "E12901000202293",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "Hอิชิตันน้ำผึ้งมะนาว |",
+            "price": 25.0
+        }
+    ],
+    "tid": "2025042900000003499243463",
+    "receipt_number": "0000601186P2",
+    "receipt_code": "7685307",
+    "date": "29/04/68",
+    "time": "12:56",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 6,
+        "used": 0,
+        "balance": 7840
+    }
+}

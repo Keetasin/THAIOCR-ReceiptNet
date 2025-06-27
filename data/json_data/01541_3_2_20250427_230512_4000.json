@@ -1,0 +1,34 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "T",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "| ช็อกโกแลตลาวาเค้ก |",
+            "price": 27.0
+        },
+        {
+            "quantity": 1,
+            "name": "| คัฟเฟ่คัฟกล้วยหอมแพ็ค |",
+            "price": 20.0
+        },
+        {
+            "quantity": 1,
+            "name": "| โอเนกิริแซลมอนยังซี |",
+            "price": 30.0
+        }
+    ],
+    "total": 77.0,
+    "tid": "2025042700000003494246672",
+    "receipt_number": "0000230512P3",
+    "receipt_code": "7843963",
+    "date": "27/04/68",
+    "time": "19:46",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 21,
+        "used": 0,
+        "balance": 7804
+    }
+}

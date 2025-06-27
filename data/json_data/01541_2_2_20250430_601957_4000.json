@@ -1,0 +1,33 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "E12901000202293",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "| H FH โดรายากิไอซ์โอ |",
+            "price": 14.0
+        },
+        {
+            "quantity": 1,
+            "name": "| H UHT แลคตาซอย ด |",
+            "price": 12.0
+        },
+        {
+            "quantity": 1,
+            "name": "| ช็อกโกแลตลาวาเค้ก |",
+            "price": 27.0
+        }
+    ],
+    "tid": "2025043000000003503378583",
+    "receipt_number": "0000601957P2",
+    "receipt_code": "7685307",
+    "date": "30/04/68",
+    "time": "18:45",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 15,
+        "used": 0,
+        "balance": 7858
+    }
+}

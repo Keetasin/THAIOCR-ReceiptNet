@@ -1,0 +1,33 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "E12901000202293",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "| มาฆ่าคัฟ ออเรียนทัล |",
+            "price": 15.0
+        },
+        {
+            "quantity": 1,
+            "name": "| คัฟเค้กกล้วยหอมช็อกโกแลต |",
+            "price": 12.0
+        },
+        {
+            "quantity": 1,
+            "name": "| Hไข่ไก่ต้มสุกตราซีพี |",
+            "price": 18.0
+        }
+    ],
+    "tid": "2025042900000003500260455",
+    "receipt_number": "0000601419P2",
+    "receipt_code": "7685307",
+    "date": "29/04/68",
+    "time": "19:12",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 12,
+        "used": 0,
+        "balance": 7846
+    }
+}

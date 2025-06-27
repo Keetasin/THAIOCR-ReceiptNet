@@ -1,0 +1,28 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "T",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "| คัฟเฟ่ค็อกสอดไส้รสช็อกโกแลต |",
+            "price": 12.0
+        },
+        {
+            "quantity": 1,
+            "name": "| H FH โดนัทเค้กไส้คัฟเฟ่ |",
+            "price": 14.0
+        }
+    ],
+    "tid": "2025050600000003522400581",
+    "receipt_number": "0000231822P3",
+    "receipt_code": "0666844",
+    "date": "06/05/68",
+    "time": "19:14",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 15,
+        "used": 0,
+        "balance": 7978
+    }
+}

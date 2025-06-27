@@ -1,0 +1,38 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "E12901000202293",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "| H แฮนวิชครัวซองค์ทูน์ |",
+            "price": 32.0
+        },
+        {
+            "quantity": 1,
+            "name": "| คัฟเฟ่ค็อกสดใส้รสช็อกโกแลต |",
+            "price": 12.0
+        },
+        {
+            "quantity": 1,
+            "name": "| H UHT แลคตาซอย ด |",
+            "price": 12.0
+        }
+    ],
+    "total": 56.0,
+    "payment": {
+        "method": "ทรูวอลเล็ท 7 App",
+        "amount": 56.0
+    },
+    "tid": "2025050100000003506893692",
+    "receipt_number": "0000602722P2",
+    "receipt_code": "7685307",
+    "date": "01/05/68",
+    "time": "19:46",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 15,
+        "used": 0,
+        "balance": 7873
+    }
+}

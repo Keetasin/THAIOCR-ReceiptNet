@@ -1,0 +1,44 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "11851",
+    "pos_number": "E118100002A0205",
+    "items": [
+        {
+            "quantity": 1,
+            "name": "| บัวลอยเผือกทรงเครื่อง |",
+            "price": 22.0
+        },
+        {
+            "quantity": 1,
+            "name": "| เบอร์เกอร์สเต็กไก่E |",
+            "price": 45.0
+        },
+        {
+            "quantity": 1,
+            "name": "| ซาดูเมล็ดนมสด EZ |",
+            "price": 25.0
+        },
+        {
+            "quantity": 10,
+            "name": "|",
+            "price": 38.0
+        },
+        {
+            "quantity": 1,
+            "name": "| แอปเปิ้ลแดงวอชิงตัน |",
+            "price": 85.0
+        },
+        {
+            "quantity": 1,
+            "name": "| แช่งไว้ชิปป์อัดLP |",
+            "price": 15.0
+        }
+    ],
+    "total": 230.0,
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 69,
+        "used": 0,
+        "balance": 7888
+    }
+}
