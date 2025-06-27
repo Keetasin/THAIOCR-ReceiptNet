@@ -1,14 +1,23 @@
 # THAIOCR-ReceiptNet
+
 โปรเจกต์นี้ใช้ Typhoon OCR สำหรับอ่านข้อความจากไฟล์ PDF หรือรูปภาพ
 
+---
+
 ## ขั้นตอนการติดตั้งและรันโปรเจกต์
+
+### 0. Clone โปรเจกต์ และเข้าโฟลเดอร์โปรเจกต์
+```bash
+git clone <repository_url>
+cd THAIOCR-ReceiptNet
+```
 
 ### 1. สร้าง Virtual Environment (venv)
 ```bash
 python -m venv venv
 ```
 
-### 2. เปิดใช้งาน Virtual 
+### 2. เปิดใช้งาน Virtual Environment
 - window
 ```bash
 venv\Scripts\activate
