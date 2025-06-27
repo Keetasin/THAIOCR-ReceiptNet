@@ -1,0 +1,40 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoint
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Log files
+*.log
+
+# dotenv / config
+.env
+
+# Output files
+*.out
+*.exe
+
+# Database
+*.sqlite3
+
+# Colab
+*.ipynb
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+key
