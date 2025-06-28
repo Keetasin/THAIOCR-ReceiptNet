@@ -2,6 +2,7 @@
     "tax_number": "0107542000011",
     "vat_code": "11851",
     "pos_number": "E118100002A0205",
+    "total": 230.0,
     "items": [
         {
             "quantity": 1,
@@ -19,8 +20,8 @@
             "price": 25.0
         },
         {
-            "quantity": 10,
-            "name": "|",
+            "quantity": 1,
+            "name": "| H เปปซีน ดริ้งค์ดี 10 |",
             "price": 38.0
         },
         {
@@ -32,9 +33,13 @@
             "quantity": 1,
             "name": "| แช่งไว้ชิปป์อัดLP |",
             "price": 15.0
+        },
+        {
+            "quantity": 2,
+            "name": "| สิทธิ์แลกซื้อALLMB |",
+            "price": 0.0
         }
     ],
-    "total": 230.0,
     "member_name": "คุณคิดศิลป์",
     "member_points": {
         "earned": 69,

@@ -25,30 +25,41 @@ def parse_receipt_text(text):
     if pos_match:
         data['pos_number'] = pos_match.group(1)
 
-    # รายการสินค้าและราคา
+    # ยอดสุทธิ
+    # total_match = re.search(r'ยอดสุทธิ.*?([\d]+\.\d{2})', text)
+    total_match = re.search(r'ยอดสุทธิ(?:.|\n)*?([\d]+\.\d{2})', text)
+    if total_match:
+        data['total'] = float(total_match.group(1))
+    else :
+        data['total'] = 0
+
     items = []
-    item_pattern = re.compile(r'(\d+)\s+([^\d\n]+)\s+([\d]+\.\d{2})')
+    # item_pattern = re.compile(r'(\d+)\s+([^\d\n]+)\s+([\d]+\.\d{2})')
+    item_pattern = re.compile(r'(\d+)\s+([^\n]+)\s+([\d]+\.\d{2})')
+    count = 0
+    for _ in item_pattern.finditer(text):
+        count +=1
+
     for match in item_pattern.finditer(text):
         item = {
             "quantity": int(match.group(1)),
             "name": match.group(2).strip(),
             "price": float(match.group(3))
         }
-        items.append(item)
-    data['items'] = items[:-2]
+        if count <= 3:
+            items.append(item)
+            break
+        elif (count > 3) and (item['price'] != data['total']):
+            items.append(item)
+    data['items'] = items
 
-    # ยอดสุทธิ
-    total_match = re.search(r'ยอดสุทธิ.*?([\d]+\.\d{2})', text)
-    if total_match:
-        data['total'] = float(total_match.group(1))
-
-    # ช่องทางจ่ายเงิน
-    payment_match = re.search(r'ทรูวอลเล็ท 7 App ([\d]+\.\d{2})', text)
-    if payment_match:
-        data['payment'] = {
-            "method": "ทรูวอลเล็ท 7 App",
-            "amount": float(payment_match.group(1))
-        }
+    # # ช่องทางจ่ายเงิน
+    # payment_match = re.search(r'ทรูวอลเล็ท 7 App ([\d]+\.\d{2})', text)
+    # if payment_match:
+    #     data['payment'] = {
+    #         "method": "ทรูวอลเล็ท 7 App",
+    #         "amount": float(payment_match.group(1))
+    #     }
 
     # TID
     tid_match = re.search(r'TID#(\d+)', text)

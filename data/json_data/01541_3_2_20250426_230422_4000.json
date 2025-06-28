@@ -3,6 +3,7 @@
     "tax_number": "0107542000011",
     "vat_code": "01323",
     "pos_number": "T",
+    "total": 27.0,
     "items": [
         {
             "quantity": 1,
@@ -15,11 +16,6 @@
             "price": 15.0
         }
     ],
-    "total": 27.0,
-    "payment": {
-        "method": "ทรูวอลเล็ท 7 App",
-        "amount": 27.0
-    },
     "tid": "2025042600000003490939080",
     "receipt_number": "0000230422P3",
     "receipt_code": "7843963",
