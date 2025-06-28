@@ -45,12 +45,12 @@ python main.py
 python json_data.py
 ```
 
-### 5. matching items กับข้อมูลสิ้นค้าที่มี
+### 7. matching items กับข้อมูลสิ้นค้าที่มี
 ```bash
 python Clean-ReceiptData.py
 ```
 
-### 5. สรุป วาดกราฟ วิเคราะห์ข้อมูล
+### 8. สรุป วาดกราฟ วิเคราะห์ข้อมูล
 ```bash
 python analysis.py
 ```
