@@ -1,2 +1,3 @@
 typhoon-ocr
 rapidfuzz
+matplotlib
