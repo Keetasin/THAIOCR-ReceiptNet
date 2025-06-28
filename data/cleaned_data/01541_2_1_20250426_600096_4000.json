@@ -1,0 +1,30 @@
+{
+    "store": "CP ALL, 7-Eleven Booth มอ. (01541)",
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "E12901000202293",
+    "total": 62.5,
+    "items": [
+        {
+            "quantity": 1,
+            "name": "Hนมพาสฯเมจิกาแฟ",
+            "price": 27.5
+        },
+        {
+            "quantity": 1,
+            "name": "แซนวิชเดนิชผักโขมแ",
+            "price": 35.0
+        }
+    ],
+    "tid": "2025042600000003490014592",
+    "receipt_number": "0000600096P2",
+    "receipt_code": "7685307",
+    "date": "26/04/68",
+    "time": "12:16",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 18,
+        "used": 0,
+        "balance": 7780
+    }
+}

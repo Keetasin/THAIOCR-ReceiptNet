@@ -1,0 +1,49 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "E12901000202293",
+    "total": 124.0,
+    "items": [
+        {
+            "quantity": 1,
+            "name": "Hแซนวิชครัวซองค์ทูน่",
+            "price": 32.0
+        },
+        {
+            "quantity": 1,
+            "name": "ยาดมสมุนไพร ตราห",
+            "price": 39.0
+        },
+        {
+            "quantity": 1,
+            "name": "ยาเม็ดซาร่า (10 เ",
+            "price": 15.0
+        },
+        {
+            "quantity": 1,
+            "name": "H UHTแลคตาซอย ด",
+            "price": 12.0
+        },
+        {
+            "quantity": 1,
+            "name": "Hน้ําดื่มน้ําทิพย์ 1500",
+            "price": 14.0
+        },
+        {
+            "quantity": 1,
+            "name": "คัพเค้กสอดไส้รสช็อก",
+            "price": 12.0
+        }
+    ],
+    "tid": "2025050500000003519313469",
+    "receipt_number": "0000604235P2",
+    "receipt_code": "7685307",
+    "date": "05/05/68",
+    "time": "19:41",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 21,
+        "used": 0,
+        "balance": 7957
+    }
+}

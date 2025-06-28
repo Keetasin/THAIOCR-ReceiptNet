@@ -1,0 +1,34 @@
+{
+    "tax_number": "0107542000011",
+    "vat_code": "01323",
+    "pos_number": "T",
+    "total": 58.0,
+    "items": [
+        {
+            "quantity": 1,
+            "name": "Hแซนวิชครัวซองค์ทูน่",
+            "price": 32.0
+        },
+        {
+            "quantity": 1,
+            "name": "H FHโดนัทเค้กไส้คัส",
+            "price": 14.0
+        },
+        {
+            "quantity": 1,
+            "name": "คัพเค้กสอดไส้รสช็อก",
+            "price": 12.0
+        }
+    ],
+    "tid": "2025042800000003497213034",
+    "receipt_number": "0000230785P3",
+    "receipt_code": "7843963",
+    "date": "28/04/68",
+    "time": "19:12",
+    "member_name": "คุณคิดศิลป์",
+    "member_points": {
+        "earned": 15,
+        "used": 0,
+        "balance": 7825
+    }
+}
