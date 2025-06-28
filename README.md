@@ -28,15 +28,29 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 4. ตั้งค่า API Key สำหรับ Typhoon OCR 
+### 4. ตั้งค่า API Key สำหรับ Typhoon OCR 
 - ใส่ API Key ของคุณใน api_key.ps1
 - รันคำสั่งนี้เพื่อโหลด API Key
 ```bash
 .\api_key.ps1
 ```
 
-5. รันโปรแกรม OCR
+### 5. รันโปรแกรม OCR
 ```bash
 python main.py
 ```
 
+### 6. เก็บข้อมูลที่สนใจใน json
+```bash
+python json_data.py
+```
+
+### 5. matching items กับข้อมูลสิ้นค้าที่มี
+```bash
+python Clean-ReceiptData.py
+```
+
+### 5. สรุป วาดกราฟ วิเคราะห์ข้อมูล
+```bash
+python analysis.py
+```
