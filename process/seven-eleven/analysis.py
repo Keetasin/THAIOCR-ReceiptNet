@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager, rcParams
 
 # โฟลเดอร์ cleaned_data
-input_folder = 'data/cleaned_data'
+input_folder = 'data/seven-eleven/cleaned_data'
 
 # ตัวแปรเก็บสถิติ
 product_sales = defaultdict(lambda: {'count': 0, 'total_sales': 0.0})
@@ -37,7 +37,7 @@ for product, stats in sorted(product_sales.items(), key=lambda x: x[1]['total_sa
     total_sales.append(stats['total_sales'])
 
 # บันทึกเป็น CSV
-output_file = 'data/product_sales_summary.csv'
+output_file = 'data/seven-eleven/product_sales_summary.csv'
 with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['Product Name', 'Quantity Sold', 'Total Sales'])
@@ -68,6 +68,6 @@ plt.xlabel('สินค้า', fontproperties=font_prop)
 plt.ylabel('ยอดขายรวม', fontproperties=font_prop)
 plt.title('ยอดขายรวม 10 อันดับแรก', fontproperties=font_prop)
 plt.tight_layout()
-plt.savefig('data/product_sales_top10_chart.png')
+plt.savefig('data/seven-eleven/product_sales_top10_chart.png')
 plt.show()
 

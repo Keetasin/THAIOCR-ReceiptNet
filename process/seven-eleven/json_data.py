@@ -91,8 +91,8 @@ def parse_receipt_text(text):
     return data
 
 # โฟลเดอร์ต้นทางและปลายทาง
-input_folder = 'data/result'
-output_folder = 'data/json_data'
+input_folder = 'data/seven-eleven/result'
+output_folder = 'data/seven-eleven/json_data'
 
 # สร้างโฟลเดอร์ผลลัพธ์ถ้ายังไม่มี
 os.makedirs(output_folder, exist_ok=True)

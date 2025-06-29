@@ -37,20 +37,20 @@ pip install -r requirements.txt
 
 ### 5. รันโปรแกรม OCR
 ```bash
-python main.py
+python .\process\ocr.py
 ```
 
 ### 6. เก็บข้อมูลที่สนใจใน json
 ```bash
-python json_data.py
+python .\process\seven-eleven\json_data.py
 ```
 
 ### 7. matching items กับข้อมูลสิ้นค้าที่มี
 ```bash
-python Clean-ReceiptData.py
+python .\process\seven-eleven\Clean-ReceiptData.py
 ```
 
 ### 8. สรุป วาดกราฟ วิเคราะห์ข้อมูล
 ```bash
-python analysis.py
+python .\process\seven-eleven\analysis.py
 ```

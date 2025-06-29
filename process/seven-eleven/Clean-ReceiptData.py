@@ -9,8 +9,8 @@ with open('dataset/product_list.csv', newline='', encoding='utf-8') as csvfile:
     for row in reader:
         product_list.append(row['product_name'])
 
-input_folder = 'data/json_data'
-output_folder = 'data/cleaned_data'
+input_folder = 'data/seven-eleven/json_data'
+output_folder = 'data/seven-eleven/cleaned_data'
 os.makedirs(output_folder, exist_ok=True)
 
 for filename in os.listdir(input_folder):

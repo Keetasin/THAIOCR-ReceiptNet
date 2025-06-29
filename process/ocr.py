@@ -2,8 +2,10 @@ from typhoon_ocr import ocr_document
 import os
 
 # เส้นทางโฟลเดอร์
+# input_folder = "dataset/other"
+# output_folder = "data/other/result"
 input_folder = "dataset/seven-eleven"
-output_folder = "data/result"
+output_folder = "data/seven-eleven/result"
 
 # สร้างโฟลเดอร์สำหรับเก็บผลลัพธ์ ถ้ายังไม่มี
 os.makedirs(output_folder, exist_ok=True)
