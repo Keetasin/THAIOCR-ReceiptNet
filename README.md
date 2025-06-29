@@ -54,3 +54,9 @@ python .\process\seven-eleven\Clean-ReceiptData.py
 ```bash
 python .\process\seven-eleven\analysis.py
 ```
+
+### 9. run web
+```bash
+cd web
+python main.py
+```
