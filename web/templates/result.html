@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <title>ผลลัพธ์ยอดขาย</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f0f6ff;
+            color: #0d3b66;
+            margin: 20px 10px 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 40px;
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(13,59,102,0.2);
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            width: 85%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(13,59,102,0.15);
+        }
+
+        thead tr {
+            background-color: #0d3b66;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        th, td {
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        tbody tr {
+            background-color: #e6f0ff;
+            transition: background-color 0.3s ease;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #cce0ff;
+        }
+        tbody tr:hover {
+            background-color: #99bbff;
+            color: #003366;
+            cursor: default;
+        }
+
+        a {
+            display: inline-block;
+            text-align: center;
+            margin: 40px auto 0;
+            padding: 12px 30px;
+            font-weight: 600;
+            color: #0d3b66;
+            text-decoration: none;
+            border: 2px solid #0d3b66;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0d3b66;
+            color: #f0f6ff;
+        }
+
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                padding: 10px 8px;
+                font-size: 0.9rem;
+            }
+            a {
+                width: 90%;
+                padding: 12px 0;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>กราฟสรุปรายการสินค้าและยอดขาย</h1>
+    <img src="{{ chart_url }}" alt="ยอดขายรวม 10 อันดับ">
+
+    <h2>สรุปรายการสินค้าและยอดขาย</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ชื่อสินค้า</th>
+                <th>จำนวน (ชิ้น)</th>
+                <th>ยอดขายรวม (บาท)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in summary %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.total_sales }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div style="text-align:center;">
+        <a href="{{ url_for('upload_file') }}">อัปโหลดไฟล์ใหม่</a>
+    </div>
+
+</body>
+</html>

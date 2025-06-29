@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <title>อัปโหลดไฟล์ใบเสร็จ</title>
+    <style>
+        /* ฟอนต์ */
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        /* รีเซ็ตค่าเบื้องต้น */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+            background: #f0f6ff;
+            color: #0d3b66;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(13, 59, 102, 0.15);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #0d3b66;
+        }
+
+        button {
+            background-color: #0d3b66;
+            border: none;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        button:hover {
+            background-color: #144d8a;
+        }
+
+        /* สำหรับมือถือให้เล็กลง */
+        @media (max-width: 400px) {
+            .container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>อัปโหลดไฟล์ใบเสร็จ</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".png,.jpg,.jpeg,.pdf" required />
+            <button type="submit">อัปโหลดและประมวลผล</button>
+        </form>
+    </div>
+</body>
+</html>
