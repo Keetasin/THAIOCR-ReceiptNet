@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>บันทึกสำเร็จ</title>
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f0f6ff;
+            color: #0d3b66;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #0d3b66;
+        }
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #0d3b66;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #063158;
+        }
+    </style>
+</head>
+<body>
+    <h1>✅ บันทึกข้อมูลสำเร็จ!</h1>
+    <a href="{{ url_for('show_history') }}">📄 ดูรายการที่เคยบันทึก</a>
+    <a href="{{ url_for('upload_file') }}">🔄 กลับไปหน้าอัปโหลด</a>
+</body>
+</html>

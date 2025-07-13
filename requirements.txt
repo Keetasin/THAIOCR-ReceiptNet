@@ -2,3 +2,4 @@ typhoon-ocr
 rapidfuzz
 matplotlib
 flask
+sqlalchemy

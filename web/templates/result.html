@@ -102,28 +102,47 @@
     <img src="{{ chart_url }}" alt="ยอดขายรวม 10 อันดับ">
 
     <h2>สรุปรายการสินค้าและยอดขาย</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>ชื่อสินค้า</th>
-                <th>จำนวน (ชิ้น)</th>
-                <th>ยอดขายรวม (บาท)</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in summary %}
-            <tr>
-                <td>{{ item.name }}</td>
-                <td>{{ item.quantity }}</td>
-                <td>{{ item.total_sales }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <form method="POST" action="{{ url_for('save_edits') }}">
+        <table>
+            <thead>
+                <tr>
+                    <th>ชื่อสินค้า</th>
+                    <th>จำนวน (ชิ้น)</th>
+                    <th>ยอดขายรวม (บาท)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in summary %}
+                <tr>
+                    <td>
+                        <!-- ชื่อสินค้า: ตัวอักษร -->
+                        <input type="text" name="name_{{ loop.index0 }}" value="{{ item.name }}"
+                            pattern="[ก-๙a-zA-Z0-9\s]+" title="กรอกเฉพาะตัวอักษรและตัวเลข"
+                            style="text-align: center; border: 1px solid #ccc; background: white; width: 100%;" required>
+                    </td>
+                    <td>
+                        <!-- จำนวน: จำนวนเต็ม -->
+                        <input type="number" name="quantity_{{ loop.index0 }}" value="{{ item.quantity }}"
+                            min="0" step="1"
+                            style="width: 80px;" required>
+                    </td>
+                    <td>
+                        <!-- ยอดขายรวม: ทศนิยม 2 ตำแหน่ง -->
+                        <input type="number" name="total_sales_{{ loop.index0 }}" value="{{ item.total_sales }}"
+                            min="0" step="0.01"
+                            style="width: 100px;" required>
+                    </td>
+                </tr>
+                {% endfor %}
 
-    <div style="text-align:center;">
-        <a href="{{ url_for('upload_file') }}">อัปโหลดไฟล์ใหม่</a>
-    </div>
+            </tbody>
+        </table>
+        <div style="text-align:center; margin-top: 20px;">
+            <input type="hidden" name="num_items" value="{{ summary|length }}">
+            <button type="submit" style="padding: 10px 20px; font-weight: bold;">💾 บันทึกการแก้ไข</button>
+        </div>
+    </form>
+
 
 </body>
 </html>

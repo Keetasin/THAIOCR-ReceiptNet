@@ -4,8 +4,12 @@ from typhoon_ocr import ocr_document
 import csv
 from rapidfuzz import process, fuzz
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')  
 from matplotlib import font_manager, rcParams
 from collections import defaultdict
+from models import Session, SaleItem
+
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
@@ -29,8 +33,12 @@ def upload_file():
             filepath = os.path.join(UPLOAD_FOLDER, 'uploaded_file' + ext)
             file.save(filepath)
 
-            result_text = ocr_document(pdf_or_image_path=filepath, task_type="default", page_num=1)
-            data = parse_receipt_text(result_text)
+            try:
+                result_text = ocr_document(pdf_or_image_path=filepath, task_type="default", page_num=1)
+                data = parse_receipt_text(result_text)
+            except Exception as e:
+                return f"เกิดข้อผิดพลาดในการเรียกใช้ OCR: {str(e)}"
+
 
             if 'items' in data:
                 for item in data['items']:
@@ -114,6 +122,50 @@ def parse_receipt_text(text):
             items.append(item)
     data['items'] = items
     return data
+
+
+from flask import Flask, render_template, request, url_for, redirect  # เพิ่ม redirect
+
+@app.route('/save-edits', methods=['POST'])
+def save_edits():
+    try:
+        num_items = int(request.form['num_items'])
+
+        # เปิด Session ใหม่
+        db_session = Session()
+        # db_session.query(SaleItem).delete()
+
+        for i in range(num_items):
+            name = request.form[f'name_{i}']
+            quantity = int(request.form[f'quantity_{i}'])
+            total_sales = float(request.form[f'total_sales_{i}'])
+
+            # บันทึกลงฐานข้อมูล
+            item = SaleItem(name=name, quantity=quantity, total_sales=total_sales)
+            db_session.add(item)
+
+        db_session.commit()
+        db_session.close()
+
+        # ✅ ไปยังหน้าใหม่หลังบันทึก
+        return redirect(url_for('saved_page'))
+
+    except Exception as e:
+        return f"เกิดข้อผิดพลาด: {str(e)}"
+
+@app.route('/saved')
+def saved_page():
+    return render_template('saved.html')
+
+@app.route('/history')
+def show_history():
+    from models import Session, SaleItem
+    session = Session()
+    items = session.query(SaleItem).all()
+    session.close()
+
+    return render_template('history.html', items=items)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
