@@ -41,3 +41,4 @@ key
 
 *.db
 /web/static/summary/chart.png
+/web/uploads/*
