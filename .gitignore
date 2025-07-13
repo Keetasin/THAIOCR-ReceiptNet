@@ -40,3 +40,4 @@ build/
 key
 
 *.db
+/web/static/summary/chart.png
